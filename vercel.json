@@ -1,0 +1,13 @@
+{
+  "name": "api-tempconv",
+  "version": 2,
+  "public": true,
+  "build": {
+    "src": "./app.js",
+    "use": "@vercel/node"
+  },
+  "routes": {
+    "src": "/(.*)",
+    "dest": "./app.js"
+  }
+}
